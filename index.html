@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recap hunting</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="tailwind.config.js">
+</head>
+
+<body>
+    <header></header>
+    <main class="container mx-auto">
+        <section>
+            <h1 class="text-4xl font-semibold text-center my-10 lg:flex hidden">Apple Iphone 13 Pro Max</h1>
+            <h1 class="text-4xl font-semibold text-center my-10 lg:hidden flex flex-col">Apple Phone Website owner <span class="text-pink-700">JSS</span></h1>
+        </section>
+        <!-- input show all data search -->
+        <section class="my-10 mx-4">
+            <div class="flex">
+                <input id="input-field" type="text" placeholder="search..." class="py-[9px] px-4 w-full font-semibold rounded-l-lg max-w-xs bg-gray-300">
+                <button onclick="handelSearchBtn()" class="py-[9px] -ml-4 px-4 bg-secondary font-semibold rounded-r-lg text-white">Search</button>
+            </div>
+            
+        </section>
+        <!-- phones result -->
+       
+        <section>
+            <div class="w-[100px] mx-auto">
+                <span id="hidden-btn" class="loading mx-auto  loading-spinner loading-md  hidden"></span>
+            </div>
+            <div id="div-container" class="grid grid-cols-1 md:grid-cols-3 gap-4 px-3">
+            </div>
+            <div id="show-all-btn" class="text-center my-10 hidden">
+                <button onclick="handelShowAll()" class="btn btn-secondary ">Show All</button>
+            </div>
+        </section>
+    </main>
+    <script src="js/phone.js"></script>
+</body>
+
+</html>
